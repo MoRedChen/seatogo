@@ -1,0 +1,49 @@
+<div class="container">
+    <div class="row">
+        <div class="col-xs-12 col-sm-12">
+            <ol class="breadcrumb">
+                <li class="active">
+                    <span class="fa fa-home"></span> 首頁
+                </li>
+            </ol>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <section id="portfolio" class="portfolio section-bg">
+            <div class="container" data-aos="fade-up">
+                <div class="section-title">
+                    <h2>商品列表</h2>
+                    <!-- <p>這是商品列表說明</p> -->
+                </div>
+                <div class="row">
+                    <div class="col-lg-12 d-flex justify-content-center" data-aos="fade-up" data-aos-delay="100">
+                        <ul id="portfolio-flters">
+                            <li (click)="onClick('全部')" [ngClass]="{ 'filter-active' : isValue == 0 }" data-filter="*">全部</li>
+                            <li (click)="onClick('零食')" [ngClass]="{ 'filter-active' : isValue == 1 }" data-filter=".filter-snack">零食</li>
+                            <li (click)="onClick('糖果')" [ngClass]="{ 'filter-active' : isValue == 2 }" data-filter=".filter-candy">糖果</li>
+                            <li (click)="onClick('飲品')" [ngClass]="{ 'filter-active' : isValue == 3 }" data-filter=".filter-drink">飲品</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
+                    <div class="col-xs-10 col-xs-offset-1 col-sm-3 col-sm-offset-0 portfolio-item filter-{{product.category}}" *ngFor="let product of productlists">
+                        <div class="thumbnail portfolio-wrap">
+                            <img src="assets/imgs/product_{{product.id}}.jpg" class="img-fluid" alt="">
+                            <div class="caption portfolio-info">
+                                <h4>{{product.name}}</h4>
+                                <p>NT$ {{product.price}}</p>
+                                <div class="text-right portfolio-links">
+                                    <!-- <a (click)="notYet()" style="cursor: pointer;">詳細資訊>></a> -->
+                                    <a (click)="show(product.id)" style="cursor: pointer;">詳細資訊>></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</div>

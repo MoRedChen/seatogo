@@ -1,0 +1,35 @@
+<app-spinner></app-spinner>
+
+<nav class="navbar navbar-inverse navbar-expand navbar-nav navbar-fixed-top" role="navigation" id="topheader" style="clear: both; width: 100%; margin: 0;">
+    <div class="container" style="display: block;">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle">
+              <span class="sr-only">選單切換</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="nav-item nav-link" routerLink="/" routerLinkActive="active" style="margin-left: 0;"><img src="assets\imgs\logo.png" height="32" style="margin: 10px 30px; padding: 0;"></a>
+            <!-- <a class="nav-item navbar-brand" routerLink="/" routerLinkActive="active">seatogo</a> -->
+        </div>
+        <div class="my-navbar rightIn">
+            <ul class="nav navbar-nav">
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a class="nav-item nav-link" routerLink="/" routerLinkActive="active">首頁</a></li>
+                <li><a class="nav-item nav-link" routerLink="/about" routerLinkActive="active">關於我們</a></li>
+                <li><a class="nav-item nav-link" routerLink="/contact" routerLinkActive="active">聯繫我們</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="app-container" style="clear: both;">
+    <router-outlet></router-outlet>
+</div>
+
+<footer class="page-footer font-small" style="clear: both;">
+    <div class="footer-copyright text-center py-3">
+        Copyright © 2023 <a routerLink="/">seatogo.great-site.net</a>. All rights reserved.
+    </div>
+</footer>

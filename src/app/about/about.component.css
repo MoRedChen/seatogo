@@ -1,0 +1,160 @@
+.breadcrumb {
+    margin: 20px;
+    background-color: rgba(255, 255, 255, 0);
+    font-size: 16px;
+}
+
+.breadcrumb>li>a {
+    text-decoration: none;
+}
+
+.color1 {
+    color: #0089D0;
+}
+
+.color2 {
+    color: #CC004C;
+}
+
+.color3 {
+    color: #FCB711;
+}
+
+.section-title {
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.section-title h2 {
+    font-size: 32px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    position: relative;
+    color: #45505b;
+}
+
+.section-title h2::before {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 120px;
+    height: 1px;
+    background: #ddd;
+    bottom: 1px;
+    left: calc(50% - 60px);
+}
+
+.section-title h2::after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 40px;
+    height: 3px;
+    background: #0563bb;
+    bottom: 0;
+    left: calc(50% - 20px);
+}
+
+
+/* ---------- 內文三區塊 ------------------------- */
+
+.row-bg {
+    margin: 0;
+}
+
+
+/* 整體 */
+
+.jumbotron p {
+    font-size: 25px;
+    font-weight: 300;
+}
+
+@media screen and (min-width: 1200px) {
+    /* 名稱由來 */
+    .bg1 {
+        background-image: url(src\assets\imgs\about_bg1.png);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center;
+        background-size: cover;
+        margin-bottom: 0;
+        height: 600px;
+        color: #000;
+    }
+    /* 發想理念 */
+    .bg2 {
+        background-image: url(src\assets\imgs\about_bg2.png);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center;
+        background-size: cover;
+        margin-bottom: 0;
+        height: 600px;
+        color: #fff;
+    }
+    /* 未來展望 */
+    .bg3 {
+        background-image: url(src\assets\imgs\about_bg3.png);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center;
+        background-size: cover;
+        margin-bottom: 0;
+        height: 600px;
+        color: #000;
+    }
+}
+
+@media screen and (max-width:1200px) {
+    /* 名稱由來 */
+    .bg1 {
+        background-image: url(src\assets\imgs\about_bg1-center.png);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center;
+        background-size: cover;
+        margin-bottom: 0;
+        height: 600px;
+        color: #000;
+    }
+    .bg1-text {
+        background-color: rgba(255, 255, 255, 0.7);
+        padding: 10px;
+    }
+    /* 發想理念 */
+    .bg2 {
+        background-image: url(src\assets\imgs\about_bg2-center.png);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center;
+        background-size: cover;
+        margin-bottom: 0;
+        height: 600px;
+        color: rgba(230, 230, 230, 1);
+    }
+    .bg2-text {
+        background-color: rgba(62, 69, 77, 0.7);
+        padding: 10px;
+    }
+    /* 未來展望 */
+    .bg3 {
+        background-image: url(src\assets\imgs\about_bg3-center.png);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center;
+        background-size: cover;
+        margin-bottom: 0;
+        height: 600px;
+        color: #000;
+    }
+    .bg3-text {
+        background-color: rgba(255, 255, 255, 0.7);
+        padding: 10px;
+    }
+}
+
+
+/* -------------------------------------------------- */

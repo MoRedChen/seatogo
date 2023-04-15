@@ -1,0 +1,17 @@
+{
+    "files.exclude":{
+        "**/*.exe": true,
+        "**/*.zip": true,
+        "**/*.rar": true,
+        "**/*.pdf": true
+    },
+    
+    "editor.fontSize": 18,
+    // "editor.fontFamily": "Consolas, 'Courier New', monospace"
+    // "editor.fontWeight": "bold",
+    "editor.fontFamily": "Fira Code, 'Courier New', monospace",
+    "editor.fontWeight": "500",
+    // "workbench.colorTheme":"Shades of Purple",
+    "workbench.colorTheme":"Default Dark+",
+    "workbench.iconTheme":"material-icon-theme"
+}
